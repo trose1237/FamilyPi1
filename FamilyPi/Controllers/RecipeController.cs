@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FamilyPi.Controllers
 {
-    public class SubstitutesController : Controller
+    public class RecipeController : Controller
     {
         public IActionResult Index()
         {
