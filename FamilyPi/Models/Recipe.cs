@@ -5,18 +5,20 @@ using System.Threading.Tasks;
 
 namespace FamilyPi.Models
 {
-    public class Tip
+    public class Recipe
     {
         public string Name { get; set; }
-        public string Description { get; set; }
+        public string Ingredient { get; set; }
+        public string Directions { get; set; }
         public int Id { get; }
 
         private static int nextId = 1;
 
-        public Tip (string name, string description)
+        public Recipe (string name, string ingredient, string directions)
         {
             Name = name;
-            Description = description;
+            Ingredient = ingredient;
+            Directions = directions;
             Id = nextId;
             nextId++;
         }

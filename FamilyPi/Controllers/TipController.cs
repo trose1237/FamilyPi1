@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace FamilyPi.Controllers
 {
-
-    static private List<Tip>Tips = new List<Tip>();
     public class TipController : Controller
     {
+        static private List<Tip> Tips = new List<Tip>();
         public IActionResult Index()
         {
             return View();
@@ -21,10 +20,10 @@ namespace FamilyPi.Controllers
             return View();
         }
 
-        public IActionResult NewTip(string name, string description)
-        {
-            Tip.Add(new Tip(name, description)); 
-        }
+        //public IActionResult NewTip(string name, string description)
+        //{
+          //  Tip.Add(new Tip(name, description)); 
+        //}
 
 
     }
